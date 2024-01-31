@@ -5,8 +5,13 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 	<style>
-         #verification_heading, #verification_subtext {
+        #verification_heading, #verification_subtext, #additional_text {
             text-align: center;
+        }
+        #additional_text {
+            background-color: #D3D3D3; /* This is light grey */
+            padding: 10px;
+            margin-top: 20px;
         }
         .code-container {
             display: flex;
@@ -38,6 +43,7 @@
         <input type="text" maxlength="1" class="code" />
         <input type="text" maxlength="1" class="code" />
     </div>
+    <p id="additional_text">This is cheeky copy. We didn’t actually send you an email, as we don’t have your email, right?</p>
 </body>
 
 </html>
