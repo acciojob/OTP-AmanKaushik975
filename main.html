@@ -4,46 +4,25 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
-	<style>
-        #verification_heading, #verification_subtext, #additional_text {
-            text-align: center;
-        }
-        #additional_text {
-            background-color: #D3D3D3; /* This is light grey */
-            padding: 10px;
-            margin-top: 20px;
-        }
-        .code-container {
-            display: flex;
-            justify-content: space-between;
-            width: 300px;
-            margin: auto;
-        }
-        .code {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            border: 1px solid #000;
-            text-align: center;
-        }
-    </style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<div id="otp_verification">
+    <h1 id="verification_heading">OTP Verification</h1>
+    <p id="verification_subtext">Enter the 6-digit OTP sent to your mobile number</p>
+    <div class="code-container">
+      <input type="text" class="code" maxlength="1" autofocus>
+      <input type="text" class="code" maxlength="1">
+      <input type="text" class="code" maxlength="1">
+      <input type="text" class="code" maxlength="1">
+      <input type="text" class="code" maxlength="1">
+      <input type="text" class="code" maxlength="1">
+    </div>
+  </div>
     <script type="text/javascript" src="./script.js">
 </script>
-    <h1 id="verification_heading">Verify Your Account</h1>
-    <p id="verification_subtext">We emailed you the six digit code. Enter the code below to confirm your email address.</p>
-    <div class="code-container">
-        <input type="text" maxlength="1" class="code" />
-        <input type="text" maxlength="1" class="code" />
-        <input type="text" maxlength="1" class="code" />
-        <input type="text" maxlength="1" class="code" />
-        <input type="text" maxlength="1" class="code" />
-        <input type="text" maxlength="1" class="code" />
-    </div>
-    <p id="additional_text">This is cheeky copy. We didn’t actually send you an email, as we don’t have your email, right?</p>
+
 </body>
- 
+
 </html>
